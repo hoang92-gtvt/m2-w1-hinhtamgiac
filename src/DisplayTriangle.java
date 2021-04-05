@@ -46,19 +46,18 @@ public class DisplayTriangle {
                 }
                 break;
             case 4:
-//                for (int i = 0; i < 5 ; i++) {
-//                    for (int j = 0; j < 2 ; j++) {
-//                        System.out.print(" ");
-//                    }
-//                    for (int j = 0; j < 5 ; j++) {
-//                        if( j>5-i || j<=2+i) {
-//                            System.out.print("*");
-//                        }else
-//                            System.out.print(" ");
-//                    }
-
-//                    System.out.println("");
-//                }
+                int line = 5;
+                for(int i = 1; i <= line; i++){
+                    for (int j = 1; j <= line*2; j++) {
+                        if((Math.abs(line-j))<=(i-1)){
+                            System.out.print(" * ");
+                        }
+                        else {
+                            System.out.print("   ");
+                        }
+                    }
+                    System.out.println();
+                }
                 break;
 
             case 0:
